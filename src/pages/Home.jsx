@@ -131,7 +131,7 @@ const Home = () => {
                     <img src={Box} className='h-[90%]' alt="" />
                 </div>
                 <div>
-                    <p className='font-semibold mobile_small:text-lg text-sm'>Earn ₦300 Bonus</p>
+                    <p className='font-semibold mobile_small:text-[16px] text-sm'>Earn ₦300 Bonus</p>
                     <p className='mobile_small:text-sm text-[13px]'>Get your Pay Me Acct for collection</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
@@ -255,7 +255,7 @@ const Home = () => {
                         </div>
                     </div>
                 <div>
-                    <p className='font-semibold mobile_small:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
+                    <p className='font-semibold mobile_small:text-[16px] text-sm'>Buy airtime, Get 3% cashback</p>
                     <p className='mobile_small:text-sm text-[13px] '>Get 3% cashback instantly on...</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
