@@ -29,12 +29,14 @@ const Home = () => {
 
   return (
     <div className='bg-[#ECFAF5] min-h-screen pb-24'>
-      <header className='fixed top-0 h-16 w-full bg-[#ECFAF5] flex items-center px-2 py-3 z-30'>
-            <div className='w-[40px] h-[40px] mr-5'>
-                <img src={Avatar} className='w-full h-full object-cover rounded-full' alt="" />
+      <header className='fixed top-0 h-16 w-full bg-[#ECFAF5] px-2 py-3 z-30 flex items-center justify-between'>
+            <div className='flex items-center'>
+                <div className='mobile:w-[40px] mobile:h-[40px] w-[35px] h-[35px] mobile:mr-5 mr-2'>
+                    <img src={Avatar} className='w-full h-full object-cover rounded-full' alt="" />
+                </div>
+                <p className='font-semibold text-md mobile:text-xl'>Hello, Haryomi...</p>
             </div>
-            <p className='font-semibold text-xl'>Hello, Haryomi...</p>
-            <div className='flex ml-6 gap-8'>
+            <div className='flex ml-6 mobile:gap-8 gap-6 pr-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-bounding-box" viewBox="0 0 16 16">
                     <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -48,10 +50,10 @@ const Home = () => {
             </div>
       </header>
       <main className='w-full pt-[70px] px-3'>
-            <div className='bg-[#30C15C] w-full h-[225px] rounded-2xl px-5 py-3 text-white'>
+            <div className='bg-[#30C15C] w-full h-[225px] rounded-2xl mobile:px-5 px-3 py-3 text-white'>
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-1'>
-                        <p>Available Balance</p>
+                        <p className='text-[13px] mobile_small:text-[15px]'>Available Balance</p>
                         {
                             eyeOpen ? (
                                 <div>
@@ -74,8 +76,8 @@ const Home = () => {
                         }
                     </div>
                     <div className='flex items-center'>
-                        <p>Transaction history</p>
-                        <span className="material-symbols-outlined">
+                        <p className='text-[13px] mobile_small:text-[15px]'>Transaction history</p>
+                        <span className="material-symbols-outlined text-[17px] mobile_small:text-[20px]">
                             chevron_right
                         </span>
                     </div>
@@ -93,7 +95,7 @@ const Home = () => {
                                     <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
                                 </svg>
                             </div>
-                            <p className='text-sm mt-2'>Add Money</p>
+                            <p className='mobile_small:text-sm text-[13px] mt-2'>Add Money</p>
                         </li>
                         <li className='flex flex-col items-center'>
                             <div className='bg-white w-[40px] flex items-center justify-center text-[#30C15C] rounded-lg h-[40px]'>
@@ -101,7 +103,7 @@ const Home = () => {
                                     sync_alt
                                 </span>
                             </div>
-                            <p className='text-sm mt-2'>Transfer</p>
+                            <p className='mobile_small:text-sm text-[13px] mt-2'>Transfer</p>
                         </li>
                         <li className='flex flex-col items-center'>
                             <div className='bg-white w-[40px] flex items-center justify-center text-[#30C15C] rounded-lg h-[40px]'>
@@ -109,7 +111,7 @@ const Home = () => {
                                     <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
                                 </svg>
                             </div>
-                            <p className='text-sm mt-2'>Withdraw</p>
+                            <p className='mobile_small:text-sm text-[13px] mt-2'>Withdraw</p>
                         </li>
                     </ul>
                 </div>
@@ -125,19 +127,19 @@ const Home = () => {
         {/*  */}
         <section className='w-full h-[80px] flex items px-3 mt-3'>
             <div className='w-full h-full bg-white custom_shadow px-2 rounded-xl flex items-center gap-2 relative'>
-                <div className='h-[70px] w-[70px] rounded-full flex items-center justify-center bg-[#ECFAF5]'>
+                <div className='mobile_small:h-[70px] mobile_small:w-[70px] h-[50px] w-[50px] rounded-full flex items-center justify-center bg-[#ECFAF5]'>
                     <img src={Box} className='h-[90%]' alt="" />
                 </div>
                 <div>
-                    <p className='font-semibold'>Earn ₦300 Bonus</p>
-                    <p className='text-sm'>Get your Pay Me Acct for collection</p>
+                    <p className='font-semibold mobile_small:text-lg text-sm'>Earn ₦300 Bonus</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Get your Pay Me Acct for collection</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
             </div>
         </section>
         {/*  */}
         <section className='px-3 mt-4 w-full'>
-            <div className='bg-white w-full h-[210px] rounded-2xl px-5 pt-4 custom_shadow'>
+            <div className='bg-white w-full min-h-[210px] rounded-2xl px-5 pt-4 custom_shadow'>
                 <ul className='flex items-center justify-between flex-wrap gap-x-6 gap-y-4'>
                     <li className='flex flex-col gap-2 items-center'>
                         <div className='w-[50px] h-[50px] bg-[#ECFAF5] shadow-md rounded-full flex items-center justify-center py-[11px]'>
@@ -225,16 +227,16 @@ const Home = () => {
         {/*  */}
         <section className='w-full h-[40px] flex items px-3 mt-3'>
             <div className='w-full h-full bg-white custom_shadow px-2 rounded-xl flex items-center justify-between relative'>
-                <div className='h-full flex items-center gap-2'>
-                    <span className="material-symbols-outlined text-[#30C15C]">
+                <div className='h-full flex items-center gap-1 mobile_small:gap-2'>
+                    <span className="material-symbols-outlined text-[#30C15C] text-[17px] mobile_small:text-[20px] ">
                         campaign
                     </span>
                     <div className='text-sm overflow-hidden flex flex-col justify-center'>
-                        <p className={`h-full ${elementOne ? 'block' : 'hidden'}`}>Earn up to ₦800 per referral</p>
-                        <p className={`h-full ${elementTwo ? 'block' : 'hidden'}`}>Upgrade to KYC2 with higher transaction limit</p>
+                        <p className={`h-full text-[11px] mobile_small:text-sm ${elementOne ? 'block' : 'hidden'}`}>Earn up to ₦800 per referral</p>
+                        <p className={`h-full text-[11px] mobile_small:text-sm ${elementTwo ? 'block' : 'hidden'}`}>Upgrade to KYC2 with higher transaction limit</p>
                     </div>
                 </div>
-                <span className="material-symbols-outlined text-[#c2c3c3]">
+                <span className="material-symbols-outlined text-[#c2c3c3] text-sm mobile_small:text-[20px] ">
                     chevron_right
                 </span>
             </div>
@@ -242,9 +244,9 @@ const Home = () => {
         {/*  */}
         <section className='w-full h-[80px] flex items px-3 mt-3'>
             <div className='w-full h-full bg-white custom_shadow px-2 rounded-xl flex items-center gap-3 relative'>
-                <div className='w-[60px] h-[60px] bg-[#ECFAF5] border border-[#30C15C] shadow-md rounded-full flex items-center justify-center py-[11px]'>
+                <div className='mobile_small:w-[60px] mobile_small:h-[60px] w-[40px] h-[40px] bg-[#ECFAF5] border border-[#30C15C] shadow-md rounded-full flex items-center justify-center py-[11px]'>
                     <div className='h-full w-1/2 border border-[#30C15C] flex items-center flex-col justify-between rounded relative'>
-                        <span className="material-symbols-outlined text-[#30C15C] text-[19px]">
+                        <span className="material-symbols-outlined text-[#30C15C] text-[15px] mobile_small:text-[19px]">
                             signal_cellular_alt
                         </span>
                         <div className='w-full h-[8px] flex items-center justify-center bg-[#30C15C]'>
@@ -253,22 +255,22 @@ const Home = () => {
                         </div>
                     </div>
                 <div>
-                    <p className='font-semibold'>Buy airtime, Get 3% cashback</p>
-                    <p className='text-sm'>Get 3% cashback instantly on every  airtime...</p>
+                    <p className='font-semibold mobile_small:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
+                    <p className='mobile_small:text-sm text-[13px] '>Get 3% cashback instantly on every a...</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
             </div>
         </section>
         <div className='fixed w-full bottom-0 h-[80px] custom_shadow_two bg-white'>
-            <ul className='w-full px-7 pt-3 flex items-center justify-between'>
+            <ul className='w-full mobile_small:px-7 px-3 pt-3 flex items-center justify-between'>
                 <li className='flex flex-col items-center'>
-                    <div className='w-[40px] h-[40px] rounded-full bg-[#30C15C] flex items-center justify-center text-xl text-white'>
+                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] rounded-full bg-[#30C15C] flex items-center justify-center text-xl text-white font-[Quicksand]'>
                         P
                     </div>
-                    <p className='text-sm'>Home</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Home</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='w-[40px] h-[40px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <span className="material-symbols-outlined text-[#bebfb0] text-[32px] rotate-180">
                             pentagon
                         </span>
@@ -276,33 +278,33 @@ const Home = () => {
                             chevron_right
                         </span>
                     </div>
-                    <p className='text-sm'>Rewards</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Rewards</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='w-[40px] h-[40px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <div className='w-[30px] h-[28px] border border-[#777676] flex items-center justify-center rounded'>
                             <span className="material-symbols-outlined text-[#777676]">
                                 show_chart
                             </span>
                         </div>
                     </div>
-                    <p className='text-sm'>Finances</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Finances</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='w-[40px] h-[40px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <span className="material-symbols-outlined text-[#777676] text-[34px]">
                                 credit_card
                         </span>
                     </div>
-                    <p className='text-sm'>Cards</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Cards</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='w-[40px] h-[40px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <div className='w-[30px] h-[30px] border border-[#777676] rounded-full flex items-end justify-center pb-2'>
                             <span className='w-[10px] h-[3px] bg-[#777676]'></span>
                         </div>
                     </div>
-                    <p className='text-sm'>Me</p>
+                    <p className='mobile_small:text-sm text-[13px]'>Me</p>
                 </li>
             </ul>
         </div>
