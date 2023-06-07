@@ -255,7 +255,7 @@ const Home = () => {
                         </div>
                     </div>
                 <div>
-                    <p className='font-semibold mobile:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
+                    <p className='font-semibold mobile_small:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
                     <p className='mobile_small:text-sm text-[13px] '>Get 3% cashback instantly on...</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
@@ -264,13 +264,13 @@ const Home = () => {
         <div className='fixed w-full bottom-0 h-[80px] custom_shadow_two bg-white'>
             <ul className='w-full mobile_small:px-7 px-3 pt-3 flex items-center justify-between'>
                 <li className='flex flex-col items-center'>
-                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] rounded-full bg-[#30C15C] flex items-center justify-center text-xl text-white font-[Quicksand]'>
+                    <div className='mobile_small:w-[40px] mobile_small:h-[40px] w-[30px] h-[30px] rounded-full bg-[#30C15C] flex items-center justify-center text-xl text-white font-[Quicksand]'>
                         P
                     </div>
                     <p className='mobile_small:text-sm text-[13px]'>Home</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <span className="material-symbols-outlined text-[#bebfb0] text-[32px] rotate-180">
                             pentagon
                         </span>
@@ -281,7 +281,7 @@ const Home = () => {
                     <p className='mobile_small:text-sm text-[13px]'>Rewards</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <div className='w-[30px] h-[28px] border border-[#777676] flex items-center justify-center rounded'>
                             <span className="material-symbols-outlined text-[#777676]">
                                 show_chart
@@ -291,7 +291,7 @@ const Home = () => {
                     <p className='mobile_small:text-sm text-[13px]'>Finances</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <span className="material-symbols-outlined text-[#777676] text-[34px]">
                                 credit_card
                         </span>
@@ -299,7 +299,7 @@ const Home = () => {
                     <p className='mobile_small:text-sm text-[13px]'>Cards</p>
                 </li>
                 <li className='flex flex-col items-center'>
-                    <div className='mobile_small:w-[40px] w-[30px] h-[30px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
+                    <div className='mobile_small:w-[40px] mobile_small:h-[40px] w-[30px] h-[30px] flex items-center justify-center'>
                         <div className='w-[30px] h-[30px] border border-[#777676] rounded-full flex items-end justify-center pb-2'>
                             <span className='w-[10px] h-[3px] bg-[#777676]'></span>
                         </div>
