@@ -139,7 +139,7 @@ const Home = () => {
         </section>
         {/*  */}
         <section className='px-3 mt-4 w-full'>
-            <div className='bg-white w-full min-h-[210px] rounded-2xl px-5 pt-4 custom_shadow'>
+            <div className='bg-white w-full min-h-[210px] rounded-2xl px-5 pt-4 pb-2 custom_shadow'>
                 <ul className='flex items-center justify-between flex-wrap gap-x-6 gap-y-4'>
                     <li className='flex flex-col gap-2 items-center'>
                         <div className='w-[50px] h-[50px] bg-[#ECFAF5] shadow-md rounded-full flex items-center justify-center py-[11px]'>
@@ -255,8 +255,8 @@ const Home = () => {
                         </div>
                     </div>
                 <div>
-                    <p className='font-semibold mobile_small:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
-                    <p className='mobile_small:text-sm text-[13px] '>Get 3% cashback instantly on every a...</p>
+                    <p className='font-semibold mobile:text-lg text-sm'>Buy airtime, Get 3% cashback</p>
+                    <p className='mobile_small:text-sm text-[13px] '>Get 3% cashback instantly on...</p>
                 </div>
                 <p className='absolute top-0 right-0 px-2 bg-[#e6e8e8] rounded-tr-xl rounded-bl-xl font-semibold cursor-pointer'>x</p>
             </div>
